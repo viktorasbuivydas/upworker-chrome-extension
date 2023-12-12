@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Read Marker",
+  "version": "1.0",
+  "description": "Marks and hides Upwork job openings",
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.upwork.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"]
+}
